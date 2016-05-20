@@ -1,0 +1,42 @@
+{
+  "name": "just-paginate",
+  "version": "0.0.0",
+  "description": "Lightweight UI agnostic pagination library for javascript",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "webpack": "^1.13.1"
+  },
+  "scripts": {
+    "transpile": "babel src -d lib",
+    "bundle": "webpack -d --output-filename just-paginate.js && webpack -p --output-filename just-paginate.min.js",
+    "build": "npm run transpile && npm run bundle",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabirbaidhya/just-paginate.git"
+  },
+  "author": "Kabir Baidhya <kabirbaidhya@gmail.com>",
+  "keywords": [
+    "ui-agnostic",
+    "pagination",
+    "paginate",
+    "just-paginate",
+    "paginated-list",
+    "paginate-array",
+    "es6"
+  ],
+  "files": [
+    "lib",
+    "dist",
+    "index.js",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "license": "MIT"
+}
